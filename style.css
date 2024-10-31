@@ -1,0 +1,8 @@
+.footer .nav-link {
+    color: white !important;
+    padding: 0 10px;
+}
+
+.footer .nav-link:hover {
+    color: #ddd !important;
+}
