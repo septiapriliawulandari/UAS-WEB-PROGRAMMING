@@ -28,7 +28,7 @@ $result = $conn->query($sql);
                         <a class="nav-link text-white" href="pasang_lowongan.html">Pasang Lowongan Kerja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="cari_lowongan.php">Cari Lowongan Kerja</a>
+                        <a class="nav-link text-white" href="cari_lowongan.html">Cari Lowongan Kerja</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="tips_loker.html">Tips Loker</a>
