@@ -7,59 +7,63 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <section class="content">
-        <div class="container">
-            <h2 class="mt-5"></h2>
-            <div class="row">
-                <div class="col-md-2">
-                    <img src="img/logo.png" alt="Lokerin Logo" class="logo" width="100" height="100">
-                </div>
-                <div class="col-md-8">
-                    <ul class="nav nav-pills nav-fill">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pasang_lowongan.html">Pasang Lowongan Kerja</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cari_lowongan.html">Cari Lowongan Kerja</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tips_loker.html">Tips Loker</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kontak.html">Kontak</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex align-items-center">
+            <img src="img/logo.png" alt="Lokerin Logo" class="mr-3" width="50" height="50">
+            <h1 class="h4 mb-0">Lokerin</h1>
+            <nav class="ml-auto">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="lowongan.php">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="pasang_lowongan.html">Pasang Lowongan Kerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="cari_lowongan.php">Cari Lowongan Kerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tips_loker.html">Tips Loker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-<div class="container mt-5">
-    <h2>Kontak Kami</h2>
-    <p>Jika Anda memiliki pertanyaan atau butuh bantuan, jangan ragu untuk menghubungi kami melalui formulir di bawah ini:</p>
-    <form>
-        <div class="form-group">
-            <label for="name">Nama</label>
-            <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Pesan</label>
-            <textarea class="form-control" id="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-    </form>
-</div>
-<p></p>
+    <div class="container mt-5">
+        <h2 class="mb-4">Kontak Kami</h2>
+        <p>Jika Anda memiliki pertanyaan atau butuh bantuan, jangan ragu untuk menghubungi kami melalui formulir di bawah ini:</p>
+        <form action="proses_kontak.php" method="POST">
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan nama Anda" required>
+            </div>
 
-<div id="footer"></div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Masukkan email Anda" required>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" class="form-control" rows="5" placeholder="Tuliskan pesan Anda" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Kirim</button>
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            &copy; 2024 Lokerin. Semua Hak Dilindungi.
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
